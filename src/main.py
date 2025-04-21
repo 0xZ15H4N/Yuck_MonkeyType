@@ -40,13 +40,13 @@ for i in idx:
     word = words.pop(int(i/10))
     word = word[:-1] + chr(i)
     print("new word is ",word)
-    words.insert(int(i/10),word)
+    words.insert(int(i/10),word)  ## adding error to words for more human like behaiviour
     
 print(words)
 time.sleep(5)
 for i in words:
     pyautogui.write(i)
-    if(random.randrange(0,15) == 8):
+    if(random.randrange(0,15) == 8): # adding a random pause to micik more like human
         print("inside random")
         time.sleep(random.randrange(0,15)/10)
     pyautogui.press("space")
