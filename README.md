@@ -2,7 +2,7 @@ To start with first clone the repo and then run
 
 `pip3 install -r requirements.txt` 
 
-also `Install the appropriate ChromeDriver`, cause selenium only works with ChromeDriver :) 
+also `Install the appropriate ChromeDriver`, cause selenium only works with ChromeDriver `:)` 
 
 here is the link : `https://googlechromelabs.github.io/chrome-for-testing/`
 
