@@ -1,3 +1,7 @@
+🫡TESTIMONY
+
+![alt text](image.png)
+
 To start with first clone the repo and then run 
 
 `pip3 install -r requirements.txt` 
@@ -12,3 +16,4 @@ also add the location of chrome.exe from the zip you downloaded to the code !
 
 now run and enjoy destroying the monkeyType but make sure you use Fake account cause they ban fast!
 
+chao~ (sorry monkey_type ;)
