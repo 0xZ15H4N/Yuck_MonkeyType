@@ -6,7 +6,8 @@ from selenium.webdriver.chrome.service import Service
 from bs4 import BeautifulSoup
 
 first_time = False
-error = 0.1
+error = 0  # 0.0 - 1 1 BEING 100% ERROR
+TIME = 5 # SECONDS TO WAIT AFTER FOR EACH TYPE 
 
 def to_write(driver):
     global first_time
@@ -58,12 +59,12 @@ if __name__ == "__main__":
     #################################################################
     ####### 5 sec window to set the  mouse focus to MonkeyType ######
     #################################################################
-
+    print("SHIFT THE FOCUS OF THE MOUSE TO MONKEY TYPE AND WAIT ⌛")
     time.sleep(5)
     start_time = time.time()
     while(time.time() -  start_time < dur):
         pyautogui.write(paragraph)
-        # time.sleep(2) # to achive desirable speed adjust the sleep time for 2 its give 750+ wpm
+        time.sleep(TIME) # to achive desirable speed adjust the sleep time for 2 its give 750+ wpm
         paragraph = to_write(driver)  
 
     a = input("press Enter to quit chrome!")
