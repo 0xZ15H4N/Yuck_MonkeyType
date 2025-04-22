@@ -26,8 +26,6 @@ for i in about_to_type_words:
     word = ''.join([l.get_text() for l in i.find_all('letter')])
     words.append(word)
 
-print(words)
-
 idx = []
 
 for i in range(int(len(words)*0.1)):
@@ -40,14 +38,16 @@ for i in idx:
     print("new word is ",word)
     words.insert(int(i/10),word)  ## adding error to words for more human like behaiviour
     
-print(words)
+
 time.sleep(5)
+
+paragraph = ''
+
 for i in words:
-    pyautogui.write(i)
-    if(random.randrange(0,15) == 8): # adding a random pause to micik more like human
-        print("inside random")
-        time.sleep(random.randrange(0,15)/10)
-    pyautogui.press("space")
+    paragraph+=i
+    paragraph+=" "
+
+pyautogui.write(paragraph)
 
 #################################################################
 ####### 5 sec window to set the  mouse focus to MonkeyType ######
